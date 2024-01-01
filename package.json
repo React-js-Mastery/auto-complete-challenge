@@ -1,18 +1,22 @@
 {
   "name": "auto-complete-challenge",
+  "homepage": "https://react-js-mastery.github.io/auto-complete-challenge/",
   "dependencies": {
+    "nanoid": "4.0.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "nanoid": "4.0.1"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "vite": "latest",
-    "@vitejs/plugin-react": "*"
+    "@vitejs/plugin-react": "*",
+    "gh-pages": "^6.1.1",
+    "vite": "latest"
   },
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist" 
   }
 }
