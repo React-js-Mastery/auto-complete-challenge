@@ -1,6 +1,7 @@
 import React from "react";
 import { nanoid } from "nanoid";
 import savedData from "../savedData";
+import AddItem from "../images/add-item.svg";
 
 export default function ToDoList() {
   const [listData, setListData] = React.useState(savedData);
@@ -101,7 +102,7 @@ export default function ToDoList() {
         {currentList}
         <label className="new-item-label">
           <img
-            src="./images/add-item.svg"
+            src={AddItem}
             className={`add-item-icon ${inputInFocus && "faded"}`}
           />
           <input
